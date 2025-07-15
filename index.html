@@ -2,9 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patient Billing Receipt</title>
+  <meta name="description" content="Simple patient billing receipt layout">
+  <meta name="author" content="Sheikh Hassaan Saeed" />
+
+  <!-- Open Graph Protocols-->
+  <meta property="og:title" content="Patient Billing Receipt" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Simple patient billing receipt layout" />
+
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <h1>If you see this, HTML is working</h1>
+  <main>
+    <div class="receipt">
+      <h2>Patient Billing Receipt</h2>
+
+      <section class="patient-info">
+        <p><strong>Patient Name:</strong> John Doe</p>
+        <p><strong>Patient ID:</strong> #123456</p>
+        <p><strong>Date:</strong> July 15, 2025</p>
+        <p><strong>Doctor:</strong> Dr. Sarah Ali</p>
+      </section>
+
+      <section class="services">
+        <h3>Services</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Qty</th>
+              <th>Unit Price</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>X-Ray</td>
+              <td>1</td>
+              <td>Rs. 1000</td>
+              <td>Rs. 1000</td>
+            </tr>
+            <tr>
+              <td>Consultation</td>
+              <td>1</td>
+              <td>Rs. 1500</td>
+              <td>Rs. 1500</td>
+            </tr>
+            <tr>
+              <td>Blood Test</td>
+              <td>2</td>
+              <td>Rs. 500</td>
+              <td>Rs. 1000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="summary">
+        <p><strong>Subtotal:</strong> Rs. 3500</p>
+        <p><strong>Discount:</strong> Rs. 500</p>
+        <p><strong>Grand Total:</strong> Rs. 3000</p>
+        <p class="status">Payment Status: <strong class="paid">Paid</strong></p>
+      </section>
+    </div>
+  </main>
+
 </body>
 </html>
